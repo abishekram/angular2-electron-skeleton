@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Success !</title>
+    <link rel="stylesheet" href="styles/global.css">
+  </head>
+  <body>
+    <todo-app></todo-app>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- <script src="node_modules/rxjs/bundles/Rx.js"></script> -->
+    <!-- <script src="node_modules/angular2/bundles/angular2.dev.js"></script> -->
+    <!-- <script src="lib/es6-shim.min.js"></script> -->
+    <script src="lib/angular2-polyfills.js"></script>
+    <script src="lib/traceur-runtime.js"></script>
+    <script src="lib/system.js"></script>
+    <script src="lib/Reflect.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <!-- <script src="lib/angular2.js"></script> -->
+    <script>
+      System.config({
+        packages: {
+          'app': {
+            format: 'cjs',
+            defaultExtension: 'js'
+          }
+        }
+      });
+
+      System.config({defaultJSExtensions: true});
+    </script>
+    <script src="lib/angular2.dev.js"></script>
+    <script src="lib/Rx.js"></script>
+    <script>
+      System.import ('app/bootstrap').catch(console.log.bind(console));
+    </script>
+
+  </body>
+</html>
